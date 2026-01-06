@@ -23,6 +23,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  transition: transform 0.35s ease-in-out, box-shadow 0.35s ease-in-out;
+  will-change: transform;
+}
+.container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 30px 60px rgba(199, 187, 187, 0.927);
 }
 .container .left_Side {
   position: relative;
